@@ -54,6 +54,11 @@ jobs:
         with:
           packages: ''
 
+      - name: Setup ninja
+        uses: seanmiddleditch/gha-setup-ninja@v5
+        with:
+          version: 1.12.1
+
       - name: Install toolchain
         run: |
           rustup default stable
